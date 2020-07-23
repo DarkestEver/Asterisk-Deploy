@@ -12,7 +12,7 @@ def preInstall():
         functions.subprocess_cmd('pip install --upgrade alembic')
         time.sleep(2)
         print "Downloading Asterisk......... Please wait"
-        functions.subprocess_cmd('wget http://downloads.asterisk.org/pub/telephony/certified-asterisk/asterisk-certified-13.13-current.tar.gz')
+        functions.subprocess_cmd('wget https://downloads.asterisk.org/pub/telephony/certified-asterisk/asterisk-certified-16.8-cert3.tar.gz')
         time.sleep(2)
 
         dir_name = "asterisk" + "_" + functions.timenow + "old"
